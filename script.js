@@ -1,5 +1,5 @@
 var frame = 1; // 当前帧数
-var total = 839; // 总帧数
+var total = 836; // 总帧数
 var cnt = 1; // 请求次数
 
 var arr = []
