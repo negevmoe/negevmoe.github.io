@@ -32,17 +32,17 @@ function raed(values) {
 function createPromiseArr() {
     let promise_list = [];
 
-    for (let i = 1; i < total; i++) {
+    for (let i = 1; i <= total; i++) {
 
         let promise = new Promise((res, rej) => {
             $.get(`./ascii/ASCII-${i}.txt`, (data, status) => {
                 res(data)
+                // 渲染进度条
+                var width = Math.floor(cnt / total * 100)
+                elem.style.width = width + '%';
+                elem.innerHTML = `${width}%`;
+                cnt++
             });
-            // 渲染进度条
-            var width = Math.floor(cnt / total * 100)
-            elem.style.width = width + '%';
-            elem.innerHTML = `loading ${width}%`;
-            cnt++
         });
 
         promise_list.push(promise);
