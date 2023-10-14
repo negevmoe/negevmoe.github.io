@@ -21,7 +21,6 @@ function pushFile() {
 }
 
 function start_interval_reading(milliseconds) {
-    pushFile();
     intervalReader = setInterval(FileReading, milliseconds);
 }
 
