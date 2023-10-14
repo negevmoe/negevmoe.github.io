@@ -11,12 +11,12 @@ function loading() {
         // 将读取文件请求添加到数组中
         load.push($.get(`./ascii/ASCII-${i}.txt`, function (data) {
             arr.push(data)
-        }))
 
-        // 渲染进度条
-        var width = Math.floor(i / total * 100)
-        elem.style.width = width + '%';
-        elem.innerHTML = `loading ${width}%`;
+            // 渲染进度条
+            var width = Math.floor(i / total * 100)
+            elem.style.width = width + '%';
+            elem.innerHTML = `loading ${width}%`;
+        }))
     }
 
     // 等待请求执行完毕
