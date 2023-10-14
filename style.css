@@ -7,12 +7,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    color: green;
-    background-color: black;
+    background-color: white;
     overflow-x: hidden;
     overflow-y: hidden;
-}
-
-span {
-    font-family: monospace;
 }
