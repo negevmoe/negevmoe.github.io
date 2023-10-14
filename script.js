@@ -12,9 +12,6 @@ function pushFile() {
         });
 
         var width = Math.floor(i / total * 100)
-        if (width >= 79) {
-            break
-        }
         elem.style.width = width + '%';
         elem.innerHTML = `loading ${width}%`;
     }
