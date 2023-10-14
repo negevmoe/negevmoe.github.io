@@ -1,1 +1,0 @@
-# negevmoe.github.io
